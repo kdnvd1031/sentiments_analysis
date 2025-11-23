@@ -100,3 +100,4 @@ Hướng phát triển
     Tích hợp API để sử dụng trên ứng dụng mobile.
 
     Xây dựng dashboard phân tích xu hướng cảm xúc theo thời gian.
+
