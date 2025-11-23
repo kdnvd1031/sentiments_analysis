@@ -29,7 +29,9 @@ Người dùng chỉ cần nhập câu cần phân tích, mô hình sẽ trả v
 - **re (regex)**   | Làm sạch dữ liệu, loại ký tự không hợp lệ                      
 
 4. Mô tả các file trong dự án
+
 🔹 app.py
+
     - Điều khiển giao diện người dùng bằng Streamlit.
     - Cho người dùng nhập văn bản, bấm nút phân loại.
     - Gọi hàm xử lý từ models.py.
@@ -37,6 +39,7 @@ Người dùng chỉ cần nhập câu cần phân tích, mô hình sẽ trả v
     - Hiển thị lịch sử phân loại.
 
 🔹 models.py
+
     - Chứa toàn bộ xử lý mô hình:
     - Tải PhoBERT 
     - Tạo pipeline sentiment-analysis
@@ -50,6 +53,7 @@ Người dùng chỉ cần nhập câu cần phân tích, mô hình sẽ trả v
         Map nhãn POS/NEG/NEU → tiếng Việt
 
 🔹 db.py
+
     - Xử lý cơ sở dữ liệu SQLite:
         init_db() → tạo database và bảng
         insert_sentiment() → thêm bản ghi lịch sử
@@ -57,23 +61,29 @@ Người dùng chỉ cần nhập câu cần phân tích, mô hình sẽ trả v
         clear_sentiments() → xóa lịch sử
 
 🔹 sentiments.db
+
     - File cơ sở dữ liệu SQLite tự sinh khi chạy app.
 
 5. Cài đặt và chạy ứng dụng
+   
 Bước 1: Clone dự án
+
     git clone <link_repo>
-    cd project
 
 Bước 2: Cài đặt thư viện
+
     pip install -r requirements.txt
 
 Bước 3: Chạy ứng dụng
+
     python -m streamlit run app.py
 
     Ứng dụng sẽ mở tại:
     http://localhost:8501
 
 6. Đánh giá hiệu suất bằng Test Case
+
+
 | STT | Câu nhập                   | Kết quả mô hình | Kỳ vọng    | Đúng/Sai |
 | --- | -------------------------- | --------------- | ---------- | -------- |
 | 1   | Phim này rất hay, xem cuốn | Tích cực        | Tích cực   | ✔        |
@@ -87,18 +97,20 @@ Bước 3: Chạy ứng dụng
 | 9   | Tuyệt vời ông mặt trời     | Tích cực        | Tích cực   | ✔        |
 | 10  | Không biết nữa, hơi chán   | Tiêu cực        | Tiêu cực   | ✔        |
 
+
 7. Kết luận và hướng phát triển
+   
 Kết luận
-    Hệ thống đã xây dựng thành công trợ lý phân loại cảm xúc tiếng Việt sử dụng PhoBERT.
-    Độ chính xác cao (~90%), tốc độ xử lý nhanh, giao diện thân thiện.
-    Đáp ứng đầy đủ mục tiêu đồ án.
+- Hệ thống đã xây dựng thành công trợ lý phân loại cảm xúc tiếng Việt sử dụng PhoBERT.
+- Độ chính xác cao (~90%), tốc độ xử lý nhanh, giao diện thân thiện.
+- Đáp ứng đầy đủ mục tiêu đồ án.
 
 Hướng phát triển
-    Thêm khả năng phân tích đa nhãn (giận dữ, vui vẻ, lo lắng…)
-    Nâng cấp tiền xử lý để hiểu tốt hơn ngôn ngữ mạng và emoji.
-    Tối ưu mô hình bằng quantization để chạy nhanh hơn.
-    Tích hợp API để sử dụng trên ứng dụng mobile.
+- Thêm khả năng phân tích đa nhãn (giận dữ, vui vẻ, lo lắng…)
+- Nâng cấp tiền xử lý để hiểu tốt hơn ngôn ngữ mạng và emoji.
+- Tối ưu mô hình bằng quantization để chạy nhanh hơn.
+- Tích hợp API để sử dụng trên ứng dụng mobile.
 
-    Xây dựng dashboard phân tích xu hướng cảm xúc theo thời gian.
+
 
 
