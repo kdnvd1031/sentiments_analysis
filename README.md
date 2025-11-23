@@ -21,14 +21,12 @@ Người dùng chỉ cần nhập câu cần phân tích, mô hình sẽ trả v
 - sqlite3 
 
 3. Các thư viện cần thiết
-| Thư viện         | Mục đích                                                       |
-| ---------------- | -------------------------------------------------------------- |
-| **transformers** | Tải mô hình PhoBERT, tokenizer, tạo pipeline phân loại cảm xúc |
-| **torch**        | Nền tảng deep learning để chạy mô hình PhoBERT                 |
-| **streamlit**    | Xây dựng giao diện web cho người dùng                          |
-| **pandas**       | Thực hiện xuát file CSV                                        |
-| **sqlite3**      | Lưu trữ lịch sử phân loại cảm xúc                              |
-| **re (regex)**   | Làm sạch dữ liệu, loại ký tự không hợp lệ                      |
+- **transformers** | Tải mô hình PhoBERT, tokenizer, tạo pipeline phân loại cảm xúc 
+- **torch**        | Nền tảng deep learning để chạy mô hình PhoBERT                 
+- **streamlit**    | Xây dựng giao diện web cho người dùng                          
+- **pandas**       | Thực hiện xuát file CSV                                       
+- **sqlite3**      | Lưu trữ lịch sử phân loại cảm xúc                              
+- **re (regex)**   | Làm sạch dữ liệu, loại ký tự không hợp lệ                      
 
 4. Mô tả các file trong dự án
 🔹 app.py
@@ -100,4 +98,5 @@ Hướng phát triển
     Nâng cấp tiền xử lý để hiểu tốt hơn ngôn ngữ mạng và emoji.
     Tối ưu mô hình bằng quantization để chạy nhanh hơn.
     Tích hợp API để sử dụng trên ứng dụng mobile.
+
     Xây dựng dashboard phân tích xu hướng cảm xúc theo thời gian.
