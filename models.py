@@ -3,12 +3,6 @@ import logging
 import unicodedata
 import re
 
-import os
-os.environ["TRANSFORMERS_NO_METALOCATION"] = "1"
-
-
-logging.basicConfig(level=logging.INFO)
-
 # Tải mô hình PhoBERT
 def load_phobert():
 
@@ -114,5 +108,6 @@ def preprocess_text(text: str) -> str:
 
     # Chuẩn hóa khoảng trắng 
     text = re.sub(r"\s+", " ", text)
+
 
     return text
