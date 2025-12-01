@@ -109,5 +109,4 @@ def preprocess_text(text: str) -> str:
     # Chuẩn hóa khoảng trắng 
     text = re.sub(r"\s+", " ", text)
 
-
     return text
