@@ -1,5 +1,4 @@
 from transformers import pipeline, AutoModelForSequenceClassification, AutoTokenizer
-import logging
 import unicodedata
 import re
 

@@ -9,16 +9,15 @@ st.set_page_config(page_title="Trợ lý phân loại cảm xúc tiếng Việt"
 st.title("📝 Trợ lý phân loại cảm xúc Tiếng Việt")
 st.markdown("Nhập văn bản tiếng Việt dưới đây và bấm **Phân loại**. Lịch sử sẽ được lưu vào SQLite.")
 
+
 # Load pipeline
 pipeline_info = None
 try: 
     pipeline_info = load_phobert()
 except Exception as e:
     st.error(f"Lỗi tải mô hình: {e}")
-
 # Input text
 text = st.text_area("Nhập nội dung cần phân loại cảm xúc", height=180)
-
 col1, col2 = st.columns(2)
 with col1:
     # Nút phân loại cảm xúc
