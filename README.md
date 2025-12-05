@@ -68,7 +68,7 @@ Người dùng chỉ cần nhập câu cần phân tích, mô hình sẽ trả v
    
 Bước 1: Clone dự án
 
-    git clone <link_repo>
+    git clone https://github.com/kdnvd1031/sentiments_analysis.git
 
 Bước 2: Cài đặt thư viện
 
@@ -110,6 +110,7 @@ Hướng phát triển
 - Nâng cấp tiền xử lý để hiểu tốt hơn ngôn ngữ mạng và emoji.
 - Tối ưu mô hình bằng quantization để chạy nhanh hơn.
 - Tích hợp API để sử dụng trên ứng dụng mobile.
+
 
 
 
