@@ -84,18 +84,18 @@ Bước 3: Chạy ứng dụng
 6. Đánh giá hiệu suất bằng Test Case
 
 
-| STT | Câu nhập                   | Kết quả mô hình | Kỳ vọng    | Đúng/Sai |
-| --- | -------------------------- | --------------- | ---------- | -------- |
-| 1   | Phim này rất hay, xem cuốn | Tích cực        | Tích cực   | ✔        |
-| 2   | Tệ thật sự, mất thời gian  | Tiêu cực        | Tiêu cực   | ✔        |
-| 3   | Cũng được, không quá tệ    | Tích cực        | Tích cực   | ✔        |
-| 4   | Ko vui tí nào              | Tiêu cực        | Tiêu cực   | ✔        |
-| 5   | Ban rat tuyet voi          | Tích cực        | Tích cực   | ✔        |
-| 6   | Tôi buồn ghê luôn...       | Tiêu cực        | Tiêu cực   | ✔        |
-| 7   | Bình thường, không ý kiến  | Tiêu cực        | Trung tính | ✘        |
-| 8   | Trời xấu quá trời          | Tiêu cực        | Tiêu cực   | ✔        |
-| 9   | Tuyệt vời ông mặt trời     | Tích cực        | Tích cực   | ✔        |
-| 10  | Không biết nữa, hơi chán   | Tiêu cực        | Tiêu cực   | ✔        |
+| STT | Câu nhập                                | Kết quả mô hình | Kỳ vọng    | Đúng/Sai |
+| --- | --------------------------------------- | --------------- | ---------- | -------- |
+| 1   | Hôm nay tôi rất vui                     | Tích cực        | Tích cực   | ✔        |
+| 2   | Món ăn này dở quá                       | Tiêu cực        | Tiêu cực   | ✔        |
+| 3   | Rat vui hom nay                         | Tích cực        | Tích cực   | ✔        |
+| 4   | Ko hiểu sao càng dùng càng thấy chán.   | Tiêu cực        | Tiêu cực   | ✔        |
+| 5   | Ngày mai đi học                         | Trung tính      | Trung tính | ✔        |
+| 6   | Không biết nên vui hay nên buồn         | Trung tính      | Trung tính | ✔        |
+| 7   | Bình thường, không ý kiến               | Tiêu cực        | Trung tính | ✘        |
+| 8   | Cảm ơn bạn rất nhiều                    | Tích cực        | Tích cực   | ✔        |
+| 9   | Tôi buon vì thất bại                    | Tiêu cực        | Tiêu cực   | ✔        |
+| 10  | Phim này hay lắm                        | Tích cực        | Tích cực   | ✔        |
 
 
 7. Kết luận và hướng phát triển
@@ -110,6 +110,7 @@ Hướng phát triển
 - Nâng cấp tiền xử lý để hiểu tốt hơn ngôn ngữ mạng và emoji.
 - Tối ưu mô hình bằng quantization để chạy nhanh hơn.
 - Tích hợp API để sử dụng trên ứng dụng mobile.
+
 
 
 
